@@ -118,7 +118,7 @@ section .services{
 
 
 @media only screen and (max-width: 1000px) {
-   /* header {
+  header {
       padding: 0 20px;
   }
   header .header-right .hamburger {
@@ -126,7 +126,7 @@ section .services{
   }
   header .header-left nav {
       margin: 0;
-      position: fixed;
+      position: absolute;
       top: -100%;
       left: 0;
       width: 100%;
@@ -142,53 +142,13 @@ section .services{
   }
   header .header-left nav ul {
       display: block;
-  } */
-
-   header {
-    padding: 0 20px;
-  }
-  
-  header .header-right .hamburger {
-    display: block;
-  }
-  
-  header .header-left nav {
-    margin: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #0b2239;
-    padding: 30px;
-    transition: 0.3s;
-    text-align: center;
-    z-index: 1;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
-  header .header-left nav.active {
-    display: block;
-    position: fixed;
-    top: 70px;
-  }
-  
-  header .header-left nav ul {
-    display: block;
   }
 
   .services{
     display: flex;
-    position: relative;
     flex-direction: row;
     justify-content: space-between;
   }
-
- 
 }
 
 
