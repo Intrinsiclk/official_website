@@ -286,6 +286,7 @@ svg {
   }
   header .header-left nav.active {
       top: 70px;
+      z-index: 67899;
   }
   header .header-left nav ul {
       display: block;

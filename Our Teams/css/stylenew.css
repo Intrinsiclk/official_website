@@ -139,6 +139,7 @@ h1{
   }
   header .header-left nav.active {
       top: 70px;
+      z-index: 6789;
   }
   header .header-left nav ul {
       display: block;
