@@ -1,0 +1,92 @@
+.card {
+    width: 250px;
+    height: 450px;
+    background: #212121;
+    padding: 2rem 1.5rem;
+    margin: 0.5rem;
+    border-radius: 5%;
+    transition: box-shadow .3s ease, transform .2s ease;
+   }
+
+.card hr{
+    width: 150px;
+}
+   
+   .card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s ease, opacity .2s ease;
+   }
+   
+   /*Image*/
+   .card-avatar img{
+    height: 200px;
+    border-radius: 10%;
+    transition: transform .2s ease;
+    margin-bottom: 1rem;
+   }
+   
+   
+   /*Card footer*/
+   button {
+    background-color: rgba(1, 94, 234, 1);
+    color: white;
+    border-radius: 10rem;
+    cursor: pointer;
+    transform: translateY(200%);
+    /* display: flex; */
+    justify-content: center;
+    width: 100%;
+    height: 9%;
+    font-size: 1em;
+    text-align: center;
+   }
+   
+   /*Text*/
+   .card-title {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 2rem;
+   }
+   
+   .card-subtitle {
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+   }
+   
+   /*Hover*/
+   .card:hover {
+    box-shadow: 0 0 20px rgba(9, 117, 241, 0.8);
+    border-color: #0974f1;
+   }
+
+   .card:hover hr{
+    width: 200px;
+   }
+   
+   .card:hover .card-info {
+    transform: translateY(-2%);
+   }
+   
+   .card:hover .card-title{
+    font-size: 2em;
+   }
+   
+   .card-social__item svg:hover {
+    fill: #232323;
+    transform: scale(1.2);
+   }
+   
+   .card-avatar:hover {
+    transform: scale(1.2);
+   }
+
+   .info{
+    display: flex;
+    justify-content: space-between;
+   }
+   

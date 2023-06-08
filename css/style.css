@@ -1,0 +1,340 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "ubuntu";
+}
+
+:root{
+  --backgroundcolor:#000000;
+  --buttoncolor: #015EEA;
+  --fontcolor: #ffffff;
+}
+
+body{
+  background-color: var(--backgroundcolor);
+}
+img {
+  width: 100%;
+}
+header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  background: #0b2239;
+}
+header .header-left {
+  display: flex;
+  align-items: center;
+}
+header .header-left .logo {
+  width: 140px;
+}
+header .header-left nav {
+  margin-left: 50px;
+}
+header .header-left nav ul {
+  display: flex;
+}
+nav ul li a {
+  display: block;
+  color: #cfd9e0;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: 0.2s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #fff;
+}
+nav .login-signup {
+  display: none;
+}
+header .header-right {
+  display: flex;
+  align-items: center;
+}
+header .login-signup {
+  color: #10c71c;
+  font-weight: bold;
+}
+header .login-signup a {
+  display: inline-block;
+  color: #0b2239;
+  background: #4ad295;
+  padding: 5px 12px;
+  border-radius: 5px;
+}
+header .header-right .hamburger {
+  margin-left: 20px;
+  cursor: pointer;
+  display: none;
+}
+header .header-right .hamburger div {
+  width: 30px;
+  height: 2px;
+  margin: 6px 0;
+  background: #fff;
+}
+
+section{
+  width: 100%;
+  height: 100vh;
+}
+
+/* <===========hero section====================> */
+.hero{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em 3em 1.1em;
+  align-items: center;
+  color: var(--fontcolor);
+}
+
+.hero span{
+  color: var(--buttoncolor);
+}
+
+.text-container{
+  padding: 1em 0.8em 1.1em;
+}
+
+
+.btn{
+  display: flex;
+  padding: 1em 1em 1.1em;
+}
+
+button{
+  padding: 1em 6em 1.1em;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--buttoncolor);
+  font-weight: 800;
+  font-size: 0.85em;
+  text-align: center;
+  /* box-shadow: 0em -0.2rem 0em --buttoncolor inset; */
+}
+
+button a{
+  color: var(--fontcolor);
+}
+
+button:hover{
+  /* background-color: transparent; */
+  color: #c70505;
+  cursor: pointer;
+}
+
+.photo-container{
+  width: 70%;
+}
+
+.photo-container img{
+  width: 100%;
+}
+
+/* <================parent===============> */
+
+.parent {
+  position: relative;
+  top: auto;
+  z-index: -1;
+  border: 2px solid aliceblue;
+  border-radius: 20px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  align-items: start;
+}
+
+
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.bxs-map,
+.bx-phone-call,
+.bxs-envelope {
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  border: 0.2rem solid aquamarine;
+  border-radius: 50%;
+}
+
+.contact-icons p {
+  color: var(--fontcolor);
+  padding-top: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+
+
+
+/* <====================build section==============> */
+
+.build-section{
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 3em 1.1em;
+  align-items:center;
+  color: var(--fontcolor);
+}
+
+.kok1{
+  width:50%;
+}
+
+.koko2{
+  width: 50%;
+}
+
+.build-process{
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.process1{
+  flex-basis: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+svg {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.team-heading h1{
+  text-align: center;
+  color: var(--fontcolor);
+}
+
+/* ============techno========== */
+
+.heading{
+  text-align: center;
+  padding: 10rem;
+  color: var(--fontcolor);
+}
+
+.tech{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.lol{
+  width: 20%;
+}
+
+.lol1 img{
+  width: 50%;
+  align-self: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  header {
+      padding: 0 20px;
+  }
+  header .header-right .hamburger {
+      display: block;
+  }
+  header .header-left nav {
+      margin: 0;
+      position: absolute;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: fit-content;
+      background-color: #0b2239;
+      padding: 30px;
+      transition: 0.3s;
+      text-align: center;
+      z-index: -1;
+  }
+  header .header-left nav.active {
+      top: 70px;
+  }
+  header .header-left nav ul {
+      display: block;
+  }
+
+  .hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  nav .login-signup {
+      display: block;
+      margin-top: 20px;
+  }
+  header .header-right .login-signup {
+      display: none;
+  }
+
+  .hero{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .build-section{
+    font-size: 15px;
+  }
+
+  .tech{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .heading{
+    /* text-align: center; */
+    padding: 2rem;
+  }
+
+  .lol{
+    max-width:100%
+  }
+
+  .lol img{
+    width: 100%;
+    padding-top: 3rem;
+  }
+
+  .lol1 img{
+    padding-top: 2rem;
+  }
+
+  .lol2 img{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+  }
+  
+}

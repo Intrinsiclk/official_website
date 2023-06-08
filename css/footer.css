@@ -50,8 +50,6 @@ a:hover{
     padding: 1rem;
 }
 
-hr {
-    border: 1px solid aqua;
+.footer hr{
     height: 75%;
 }
-

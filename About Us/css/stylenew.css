@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "ubuntu";
+}
+
+:root{
+  --backgroundcolor: black;
+  --buttoncolor: #015EEA;
+  --fontcolor: #ffffff;
+}
+
+body{
+  background-color: var(--backgroundcolor);
+}
+img {
+  width: 100%;
+}
+header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  background: black;
+}
+header .header-left {
+  display: flex;
+  align-items: center;
+}
+header .header-left .logo {
+  width: 140px;
+}
+header .header-left nav {
+  margin-left: 50px;
+}
+header .header-left nav ul {
+  display: flex;
+}
+nav ul li a {
+  display: block;
+  color: #cfd9e0;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: 0.2s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #fff;
+}
+nav .login-signup {
+  display: none;
+}
+header .header-right {
+  display: flex;
+  align-items: center;
+}
+header .login-signup {
+  color: #10c71c;
+  font-weight: bold;
+}
+header .login-signup a {
+  display: inline-block;
+  color: #0b2239;
+  background: #4ad295;
+  padding: 5px 12px;
+  border-radius: 5px;
+}
+header .header-right .hamburger {
+  margin-left: 20px;
+  cursor: pointer;
+  display: none;
+}
+header .header-right .hamburger div {
+  width: 30px;
+  height: 2px;
+  margin: 6px 0;
+  background: #fff;
+}
+
+section .hero{
+  width: 100%;
+  height: 50vh;
+}
+
+
+
+
+/* <===========hero section====================> */
+.hero{
+  padding: 1em 3em 1.1em;
+  align-items: center;
+  color: var(--fontcolor);
+}
+
+.hero span{
+  color: var(--buttoncolor);
+}
+
+
+.text-container{
+  width: 50%;
+  padding: 1em 0.8em 1.1em;
+}
+
+.Vision{
+  margin-left: 650px;
+  width: 100%;
+  padding: 1em 0.8em 1.1em;
+}
+
+.Mission{
+  width: 50%;
+  padding: 1em 0.8em 1.1em;
+}
+
+
+/*========== about company section====== */
+.about_company{
+  padding: 1em 3em 1.1em;
+  align-items: center;
+  color: var(--fontcolor);
+}
+
+.about_company span{
+  color: var(--buttoncolor);
+}
+
+.about{
+  display: flex;
+  justify-content: center;
+}
+
+.about_image{
+  width: 60%;
+  height: auto;
+  padding:1%;
+}
+
+.about_image img{
+  width: 60%;
+}
+
+.about_cont{
+  align-self: center;
+  width: 40%;
+  padding: 2%;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+  header {
+      padding: 0 20px;
+  }
+  header .header-right .hamburger {
+      display: block;
+  }
+  header .header-left nav {
+      margin: 0;
+      position: absolute;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: fit-content;
+      background-color: #0b2239;
+      padding: 30px;
+      transition: 0.3s;
+      text-align: center;
+      z-index: -1;
+  }
+  header .header-left nav.active {
+      top: 70px;
+  }
+  header .header-left nav ul {
+      display: block;
+  }
+
+  .hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  nav .login-signup {
+      display: block;
+      margin-top: 20px;
+  }
+  header .header-right .login-signup {
+      display: none;
+  }
+
+  .hero{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .about{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about_image{
+    width: 70%;
+  }
+
+  .about_image img{
+    width: 100%;
+  }
+  
+
+  .about_cont{
+    width: 100%;
+  }
+ 
+}
