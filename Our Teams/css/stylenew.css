@@ -146,11 +146,11 @@ h1{
       display: block;
   }
 
-  .hero{
+  /* .hero{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
+  } */
 }
 
 
@@ -163,23 +163,37 @@ h1{
       display: none;
   }
 
-  .hero{
+
+  /* .hero{
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+  } */
 
-  
 .row1,
 .row2,
 .row3{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-between;
+} 
+
+/* .row1,.row2,.row3{
+  display: inline-block;
+} */
+
+.SE,.Design,.QA,.HR,.Admin{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-h2{
-  padding: 20px;
+.info{
+  display: flex;
+  flex-direction: column;
 }
-
+  
+ 
 }
