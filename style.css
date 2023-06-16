@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Lato&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,600;1,700&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: "ubuntu";
 }
 
 :root{
@@ -15,6 +17,22 @@
 
 body{
   background-color: var(--backgroundcolor);
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.team-heading h1{
+  font-size: 5rem;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-heading{
+  padding: 2rem;
+  font-size: 4rem;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 nav ul li a:hover{
@@ -107,7 +125,7 @@ section{
   color: var(--fontcolor);
 }
 
-.hero span{
+.koko1 span,.hero span,.heading span{
   color: var(--buttoncolor);
 }
 
@@ -115,6 +133,15 @@ section{
   padding: 1em 0.8em 1.1em;
 }
 
+.text-container h1{
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.text-container p{
+  font-size: 1.2rem;
+  padding-right: 8rem;
+}
 
 .btn{
   display: flex;
@@ -206,11 +233,18 @@ button:hover{
 }
 
 .kok1{
-  width:50%;
+  width:40%;
+}
+
+.koko1 h1{
+  font-size: 4rem;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .koko2{
-  width: 50%;
+  width: 60%;
 }
 
 .build-process{
@@ -244,6 +278,13 @@ svg {
   text-align: center;
   padding: 10rem;
   color: var(--fontcolor);
+}
+
+.heading h1{
+  font-size: 5rem;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .tech{
@@ -308,6 +349,10 @@ svg {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  
+
+  
 }
 
 
@@ -328,6 +373,8 @@ svg {
 
   .build-section{
     font-size: 15px;
+    flex-direction: column;
+    padding: 2rem;
   }
 
   .tech{
@@ -359,6 +406,28 @@ svg {
     margin-left: auto;
     margin-right: auto;
     padding-top: 2rem;
+  }
+  
+  .text-container h1{
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  
+  .text-container p{
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+
+  .heading h1,.section-heading{
+    font-size: 3rem;
+  }
+
+  .koko1 h1{
+    font-size: 2.5rem;
+  }
+
+  .koko2{
+    padding: 0.5rem;
   }
   
 }

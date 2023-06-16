@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Lato&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,600;1,700&display=swap');
+
+
 .colorful-form {
   max-width: 400px;
   margin: 0 auto;
@@ -17,11 +22,13 @@
 }
 
 .form-input {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
   width: 100%;
   padding: 10px;
   border: none;
   background-color: #fff;
-  color: #333;
+  color: #000000;
   border-radius: 5px;
 }
 
@@ -45,3 +52,52 @@ textarea.form-input {
   background-color: rgb(3, 42, 100);
 }
 
+.error {
+  color: red;
+  font-style: italic;
+}
+
+.alert-box {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #191919;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  z-index: 1;
+}
+
+.alert-box h2 {
+  margin-top: 0;
+  color: white;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.alert-box p {
+  margin-bottom: 0;
+  color: #fcfc;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.alert-box button {
+  margin-top: 20px;
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.alert-box button:hover {
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}

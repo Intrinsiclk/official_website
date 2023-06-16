@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/stylenew.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/form.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
     <header>
@@ -25,7 +26,7 @@
                         <a href="../Portfolio/Portfolio.html">PORTFOLIO</a>
                     </li>
                     <li>
-                        <a href="../Previous Projects/Projects.html">PREVIOUS PROJECTS</a>
+                        <a href="../Previous Projects/Projects.html">PROJECTS</a>
                     </li>
                     <li>
                         <a href="../About Us/about us.html">ABOUT US</a>
@@ -34,14 +35,14 @@
                 </ul>
                 <div class="login-signup">
                     <a href="../Contact us/Contact us.html">CONTACT US</a>  
-                    <a href="../Our Teams/Our Teams.html">Our teams</a>
+                    <a href="../Our Teams/Our Teams.html">Team</a>
                 </div>
             </nav>
         </div>
         <div class="header-right">
             <div class="login-signup">
                 <a href="../Contact us/Contact us.html">CONTACT US</a>
-                <a href="../Our Teams/Our Teams.html">Our teams</a>
+                <a href="../Our Teams/Our Teams.html">Teams</a>
             </div>
             <div class="hamburger">
                 <div></div>
@@ -58,26 +59,26 @@
         </div>
         <div class="cont">
             <div class="form">
-                <form action="mailto:info.intrinsiclk@gmail.com" method="post" class="colorful-form">
+                <form class="colorful-form" id="myForm" onsubmit="validateForm(); reset(); return false;">
                     <div class="form-group">
-                      <label class="form-label" for="name">Name:</label>
-                      <input required="" placeholder="Eg : Shaveen De Silva" class="form-input" type="text">
+                      <label class="form-label" for="fname">Name:</label>
+                      <input  placeholder="Eg : Shaveen De Silva" class="form-input" type="text" id="fname">
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="company-name">Company Name:</label>
-                        <input required="" placeholder="Enter your Company name" class="form-input" type="text">
+                        <label class="form-label" for="company">Company Name:</label>
+                        <input  placeholder="Enter your Company name" class="form-input" type="text" id="company">
                     </div>
                     <div class="form-group">
                       <label class="form-label" for="phone">Phone No.:</label>
-                      <input required="" placeholder="Eg: +94721236547" class="form-input" type="number">
+                      <input  placeholder="Eg: +94721236547" class="form-input" id="phone">
                     </div>
                     <div class="form-group">
                       <label class="form-label" for="email">Email:</label>
-                      <input required="" placeholder="Eg: info.intrinsiclk@gmail.com" class="form-input" name="email" id="email" type="email">
+                      <input  placeholder="Eg: info.intrinsiclk@gmail.com" class="form-input" name="email" id="email" type="email">
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="message">What is your inquiry about:</label>
-                        <select id="message" name="message">
+                        <label class="form-label" for="inquiry">What is your inquiry about:</label>
+                        <select id="inquiry" name="inquiry">
                             <option value="select">Please Select</option>
                             <option value="genaral information request">Genaral Information Request</option>
                             <option value="project commencement">Project Commencement</option>
@@ -92,7 +93,7 @@
                     </div>
                     <div class="form-group">
                       <label class="form-label" for="message">How can we help you:</label>
-                      <textarea required="" placeholder="Let us know what you need." class="form-input" name="message" id="message"></textarea>
+                      <textarea  placeholder="Let us know what you need." class="form-input" name="message" id="message"></textarea>
                     </div>
                     <button class="form-button" type="submit">Submit</button>
                   
@@ -119,11 +120,17 @@
 
             </form>
         </div>
+        <div class="alert-box">
+            <h2>Alert</h2>
+            <p id="alert-message"></p>
+            <button onclick="hideAlertBox()">OK</button>
+        </div>
+         
 
 
     </section>
-
-   
+    
+    <script defer src="../Contact us/js/contact us.js"></script>
     <script src="./js/1.js"></script>
 </body>
 

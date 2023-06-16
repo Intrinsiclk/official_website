@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Lato&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200;1,300;1,600;1,700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: "ubuntu";
+  font-family: 'Titillium Web', sans-serif;
 }
 
 :root{
@@ -130,21 +134,43 @@ section .hero{
 
 
 .text-container{
-  width: 50%;
+  width: 100%;
   padding: 1em 0.8em 1.1em;
+  justify-content: center;
+  animation: textanimate 5s linear  1 forwards;
+}
+
+.about_cont p,.intro p,.Mission p,.Vision p,.text-container p{
+  font-size: 1.5rem;
+}
+@keyframes textanimate {
+  from{
+      transform: translateX(-400px);
+  }
+  to{
+      transform: translateX(300px);
+  }
 }
 
 .Vision{
-  margin-left: 650px;
   width: 100%;
   padding: 1em 0.8em 1.1em;
 }
 
 .Mission{
-  width: 50%;
+  width: 70%;
   padding: 1em 0.8em 1.1em;
+  animation: textanimate1 3s linear  1 forwards;
 }
 
+@keyframes textanimate1 {
+  from{
+      transform: translateX(-400px);
+  }
+  to{
+      transform: translateX(300px);
+  }
+}
 
 /*========== about company section====== */
 .about_company{
@@ -178,7 +204,17 @@ section .hero{
   padding: 2%;
 }
 
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
 
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 
 
 
@@ -230,7 +266,7 @@ section .hero{
 
   .hero{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
   }
 
@@ -254,4 +290,20 @@ section .hero{
     width: 100%;
   }
  
+
+  .text-container{
+    width: 100%;
+    padding: 1em 0.8em 1.1em;
+    justify-content: center;
+    animation: textanimate1 2s linear  1 forwards;
+  }
+  
+  @keyframes textanimate1 {
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(50px);
+    }
+  }
 }
