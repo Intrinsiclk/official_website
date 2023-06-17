@@ -187,7 +187,7 @@ button:hover{
   border-radius: 20px;
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
   grid-template-rows: auto;
   grid-gap: 10px;
   align-items: start;
@@ -427,7 +427,12 @@ svg {
   }
 
   .koko2{
+    width:80%;
     padding: 0.5rem;
   }
+
+  
+
+  
   
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/stylenew.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/card.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -54,7 +55,9 @@
    <section class="services">
 
     <div class="row1">
-    <div class="card">
+    <div class="card" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
         <div class="content">
             <img src="./images/web development.png" alt="Web Development">
           <p class="heading">Web Development
@@ -65,7 +68,9 @@
           <a href="../Previous Projects/Projects.html"><button class="btn">Read more</button></a>
         </div>
       </div>
-      <div class="card">
+      <div class="card" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
         <div class="content">
             <img src="./images/mobile-app-development.png" alt="Mobile App Development">
           <p class="heading">Mobile App Development
@@ -75,7 +80,9 @@
           <a href="../Previous Projects/Projects.html"><button class="btn">Read more</button></a>
         </div>
       </div>
-      <div class="card">
+      <div class="card" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
         <div class="content">
             <img src="./images/digital marketing.jpeg" alt="Digital Marketing & Advertising">
           <p class="heading">Digital Marketing & Advertising
@@ -86,7 +93,9 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
         <div class="content">
             <img src="./images/services.jpg" alt="Services & Maintenance">
           <p class="heading">Services & Maintenance</p>    
@@ -117,6 +126,10 @@
 
    
     <script src="./js/1.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+           AOS.init();
+         </script>
 </body>
 
 

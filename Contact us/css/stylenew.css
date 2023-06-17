@@ -161,6 +161,10 @@ section .hero{
   font-size: 32px;
 }
 
+.title p{
+  font-size: 22px;
+}
+
 .title span {
   color: rgba(1, 94, 234, 1);
 }
@@ -169,7 +173,7 @@ section .hero{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #2B2F48;
+  background-color: #2248a770;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(3, 96, 202, 0.8);
   border-color: #0974f1;

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/stylenew.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -52,13 +53,18 @@
 
     <section class="hero">
         <div class="web">
-            <h1><span>Web</span> Application</h1>
-            <br>
-            <p>Our web development services focus on creating innovative and responsive websites tailored to your specific needs. We leverage the latest technologies and industry best practices to design and develop visually appealing and functional websites that provide a seamless user experience across different devices.</p>
-            <br>
-            <h3>Official Web Page</h3>
-            <br>
-            <div class="official">
+            <div class="sample1" data-aos="fade-up"
+            data-aos-duration="3000">
+                <h1><span>Web</span> Application</h1>
+                <br>
+                <p>Our web development services focus on creating innovative and responsive websites tailored to your specific needs. We leverage the latest technologies and industry best practices to design and develop visually appealing and functional websites that provide a seamless user experience across different devices.</p>
+                <br>
+                <h3>Official Web Page</h3>
+                <br>
+            </div>
+            <div class="official"  data-aos="fade-right"
+            data-aos-offset="500"
+            data-aos-easing="ease-in-sine">
                 <div class="image">
                     <img src="./images/official.png" alt="official web page">
                 </div>
@@ -77,9 +83,12 @@
 
             </div>
             <br><br>
-            <h3 style="text-align: right;">Blue Supphire</h3>
+            <div class="sample2" data-aos="fade-up"
+            data-aos-duration="3000">
+                <h3 style="text-align: right;">Blue Supphire</h3>
+            </div>
             <br>
-            <div class="blue">
+            <div class="blue reveal">
                 <div class="Supphire">
                     <div class="boo">
                     <p>At Intrinsic, we understand that every organization has unique needs and aspirations. 
@@ -109,13 +118,16 @@
         </div>
         <div class="mobile">
             <br><br>
-            <h1><span>Mobile</span> Application</h1>
-            <br> <br>
-            <p>With our mobile app development services, we bring your ideas to life by creating custom mobile applications for both iOS and Android platforms. Our team of skilled developers utilizes cutting-edge technologies and follows industry standards to build user-friendly and feature-rich mobile apps that cater to your business requirements.</p>
-            <br><br>
-            <h3>Nisalawila Foundation App</h3>
-            <br>
-            <div class="nutrition">
+            <div class="sample3" data-aos="fade-up"
+            data-aos-duration="3000">
+                <h1><span>Mobile</span> Application</h1>
+                <br> <br>
+                <p>With our mobile app development services, we bring your ideas to life by creating custom mobile applications for both iOS and Android platforms. Our team of skilled developers utilizes cutting-edge technologies and follows industry standards to build user-friendly and feature-rich mobile apps that cater to your business requirements.</p>
+                <br><br>
+                <h3>Nisalawila Foundation App</h3>
+                <br>
+            </div>
+            <div class="nutrition reveal">
                 <div class="image">
                     <img src="./images/iPhone 14 - 31.png" alt="helth app">
                 </div>
@@ -154,6 +166,10 @@
 
    
     <script src="./js/1.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+       AOS.init();
+     </script>
 </body>
 
 
