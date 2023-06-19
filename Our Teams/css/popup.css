@@ -30,6 +30,7 @@
     height:auto;
     justify-content: left;
     padding: 1%;
+    object-fit: cover;
 }
 
 .content h4{
@@ -80,11 +81,14 @@
         
     }
     .content img{
-        width: 80%;
+        width: 60%;
         height:auto;
-        padding-left: 4rem;
+        padding-left: 1rem;
         /* padding: 1%; */
     }
     
+    .details h1{
+        font-size: 25px;
+    }
     
 }
