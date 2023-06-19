@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Intrinsic</title>
+    <title>Intrinsic - Portfolio </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../Blue Supphire/css/footer.css">
     <link rel="stylesheet" href="../Blue Supphire/css/stylenew.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,7 +23,7 @@
                         <a href="../../../Sevices/Services.html">SERVICES</a>
                     </li>
                     <li>
-                        <a href="../../../Portfolio/Portfolio.html">PORTFOLIO</a>
+                        <a class="select" href="../../../Portfolio/Portfolio.html">PORTFOLIO</a>
                     </li>
                     <li>
                         <a href="../../../Previous Projects/Projects.html">PROJECTS</a>
@@ -51,20 +53,26 @@
     </header>
 
     <section class="hero">
-        <div class="image">
+        <div class="image" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="3000">
         <img src="../Blue Supphire/images/blue2.jpg" alt="">
         </div>
 
         <br><br>
 
-        <div class="content">
-            <h1 style="text-align: center;">Blue Supphire</h1>
+        <div class="content reveal">
+            <h1 style="text-align: center;">Blue Sapphire</h1>
             <br><br>
             <div class="contain">
-                <div class="photo">
-                    <img src="../Blue Supphire/images/sapphire-removebg-preview.png" alt="">
+                <div class="photo reveal" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="3000">
+                    <img src="../Blue Supphire/images/sapphire.jpg" alt="">
                 </div>
-                <div class="text">
+                <div class="text reveal" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <div class="over">
                     <p><span>Overview</span></p>
                     <br>
@@ -73,7 +81,7 @@
 
                     <div class="Client">
                         <br>
-                        <p><span>Client :</span>  Blue Supphire</p>
+                        <p><span>Client :</span>  Blue Sapphire</p>
                         <br>
                         <p><span>Industry :</span> Clothing</p>
                         <br>
@@ -87,6 +95,10 @@
 
    
     <script src="../../js/1.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+       AOS.init();
+     </script>
 </body>
 
 
@@ -95,7 +107,7 @@
         
         
         <br>
-        <a href="#"><img src="../Blue Supphire/images/INTRINSIC 1.png" alt=""></a>
+        <a href="../../../index.html"><img src="../Blue Supphire/images/INTRINSIC 1.png" alt=""></a>
         <br>
         <br>
         <br>
@@ -108,28 +120,27 @@
     <div class="col">
         <h4>Company</h4>
         <br>
-        <a href="#">About Us</a>
-        <a href="#">Our Teams</a>
-        <a href="#">Contact Us</a>
+        <a href="../../../About Us/about us.html">About Us</a>
+        <a href="../../../Our Teams/Our Teams.html">Our Teams</a>
+        <a href="../../../Contact us/Contact us.html">Contact Us</a>
     </div>
     <hr>
     <div class="col">
         <h4>Services</h4>
         <br>
-        <a href="#">Services</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Previous Projects</a>
+        <a href="../../../Sevices/Services.html">Services</a>
+        <a href="../../../Portfolio/Portfolio.html">Portfolio</a>
+        <a href="../../../Previous Projects/Projects.html">Projects</a>
     </div>
     <hr>
     <div class="col follow">
         <h4 style="padding-right: 2%;">SOCIALIZE WITH INTRINSIC</h4>
         <div class="icon">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-google"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-github"></i></a>
+            <a target="_blank" href="https://www.facebook.com/intrinsic.software"><i class="fa-brands fa-facebook"></i></a>
+            <a target="_blank" href="https://twitter.com/Intrinsiclk"><i class="fa-brands fa-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com/intrinsic_software/"><i class="fa-brands fa-instagram"></i></a>
+            <a  target="_blank" href=" https://www.linkedin.com/company/intrinsic-lk/"><i class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href=" https://github.com/Intrinsiclk"><i class="fa-brands fa-github"></i></a>
         </div>
     </div>
 </footer>

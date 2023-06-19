@@ -50,5 +50,6 @@ a:hover{
 }
 
 .footer hr{
+    border: 1px solid aqua;
     height: 75%;
 }
